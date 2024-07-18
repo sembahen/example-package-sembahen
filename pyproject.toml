@@ -1,15 +1,29 @@
-# contents of pyproject.toml
-
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
 name = "example-package-SEMBAHEN"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
   "numpy"
+]
+authors = [
+  { name="Example Author", email="author@example.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Private :: Do Not Upload",
 ]
 
 [project.optional-dependencies]
 test = ["pytest"]
+
+[project.urls]
+"Homepage" = "https://sembahen.github.io/example-package-SEMBAHEN"
+"Source Code" = "https://github.com/sembahen/example-package-SEMBAHEN"
